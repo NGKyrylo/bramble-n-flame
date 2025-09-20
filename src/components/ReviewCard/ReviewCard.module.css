@@ -1,0 +1,61 @@
+.body {
+    background-color: var(--elements-bg);
+    border: 1px solid var(--bronze-border);
+    border-radius: 8px;
+    cursor: default;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.horizontal {
+    width: 326px;
+    min-width: 326px;
+    max-width: 326px;
+}
+
+.reviewTitle {
+    padding: 0;
+    margin: 0;
+    color: var(--text-default-primary);
+    font: 24px 'Inter', sans-serif;
+    font-weight: bolder;
+}
+
+.reviewText {
+    padding: 0;
+    margin: 0;
+    color: var(--text-default-primary);
+    font: 16px 'Inter', sans-serif;
+}
+
+.reviewerData {
+    display: flex;
+    gap: 12px;
+}
+
+.reviewerName {
+    padding: 0;
+    margin: 0;
+    color: var(--green-text-default-secondary);
+    font: 16px 'Inter', sans-serif;
+    font-weight: bolder;
+}
+
+.reviewDate {
+    padding: 0;
+    margin: 0;
+    color: var(--green-text-default-tertiary);
+    font: 16px 'Inter', sans-serif;
+}
+
+.vertical .reviewTitle {
+    display: none;
+}
+
+.fillWidth {
+    width: unset;
+    min-width: unset;
+    max-width: none;
+}

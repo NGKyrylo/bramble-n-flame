@@ -1,0 +1,31 @@
+.navigatorContainer {
+    background-color: var(--elements-bg);
+    border: 1px solid var(--bronze-border);
+    border-radius: 8px;
+    padding: 12px;
+    padding-right: 48px;
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    gap: 4px;
+}
+
+.dropdownItem {
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    border: none;
+    color: var(--text-default-primary);
+    text-decoration: none;
+}
+
+.dropdownItem:hover, .dropdownItem.active {
+    background-color: var(--nav-hover);
+    color: var(--nav-hover-text);
+}

@@ -1,0 +1,20 @@
+.main {
+    text-align: center;
+    /* margin-top: 50px; */
+
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: var(--text-default-primary);
+}
+
+.main h1 {
+    margin: 0;
+    font-size: 72px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.main p {
+    margin: 0;
+    font-size: 24px;
+}

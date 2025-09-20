@@ -1,0 +1,80 @@
+.body {
+    padding: 32px 64px;
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+}
+
+.header {
+    color: var(--text-default-primary);
+    font: 24px 'Inter', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 колонки */
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 2.24vw;
+}
+
+.lastTwoCards {
+    display: none;
+    grid-column: span 4;
+    gap: 2.24vw;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 1354px) {
+
+    .cardsContainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .cardsContainer> :nth-last-child(-n+2) {
+        display: none;
+    }
+
+    .lastTwoCards {
+        display: grid;
+        grid-column: span 3;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.24vw;
+    }
+}
+
+@media (max-width: 1027px) {
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lastTwoCards {
+        display: grid;
+        grid-column: span 2;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.24vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        padding: 16px 1vw;
+        gap: 24px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+@media (max-width: 344px) {
+    .cardsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 120px 24px;
+    gap: 12px;
+}
+
+.formContainer {
+    background-color: var(--elements-bg);
+    border: 1px solid var(--bronze-border);
+    border-radius: 8px;
+    padding: 24px;
+    gap: 12px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.infoText {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: #BF6A02;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+.productImg {
+    /* display: inline-block; */
+    /* object-fit: cover; */
+
+    /* display: flex; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.small {
+    width: 80px;
+    height: 86.25px;
+}
+
+.medium {
+    height: 160px;
+}
+
+.big {
+    height: 247px;
+    /* width: 218px; */
+}
+
+.fill {
+    flex: 1;
+}
+
+.productImg img {
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.productImg img.contain {
+    object-fit: contain;
+}

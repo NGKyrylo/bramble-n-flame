@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /sign-in
+Disallow: /register
+Disallow: /basket
+Disallow: /checkout
+Disallow: /thank-you
+Disallow: /document
+
+Allow: /
+
+Sitemap: https://bramble-n-flame.co.uk/sitemap.xml

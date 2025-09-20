@@ -1,0 +1,106 @@
+/* .checkboxContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.checkboxInput {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkboxInput:checked {
+    background-color: #2C2C2C;
+    border-color: #2C2C2C;
+}
+
+.checkboxContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 16px;
+    color: #1e1e1e;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 14px;
+    color: #757575;
+    margin: 0;
+    margin-top: 4px;
+} */
+
+.checkboxContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .checkboxInput {
+    display: none; /* Ховаємо стандартний чекбокс */
+  }
+  
+  .customCheckbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--bronze-border);
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative; /* Додано для позиціонування галочки */
+    transition: all 0.2s ease-in-out;
+    margin-top: 1px;
+  }
+  
+  .checkboxInput:checked + .customCheckbox {
+    background-color: var(--primary-btn-bg);
+    border-color: var(--primary-btn-bg);
+  }
+  
+  /* Галочка */
+  .customCheckbox::after {
+    content: "";
+    position: absolute;
+    display: none; /* Галочка прихована за замовчуванням */
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Відображення галочки, якщо чекбокс обраний */
+  .checkboxInput:checked + .customCheckbox::after {
+    display: block;
+  }
+  
+  .checkboxContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 16px;
+    color: var(--text-default-primary);
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: var(--text-default-secondary);
+    margin: 0;
+    margin-top: 4px;
+    font-family: "Inter", sans-serif;
+    max-width: 220px;
+  }

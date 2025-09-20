@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 120px 24px;
+    gap: 32px;
+}
+
+.formSubmited {
+    display: flex;
+}
+
+.textContainer p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: var(--text-default-primary);
+    text-align: center;
+}
+
+.bigText {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.smallText {
+    font-size: 32px;
+}
+
+.formContainer {
+    background-color: var(--elements-bg);
+    border: 1px solid var(--bronze-border);
+    border-radius: 8px;
+    padding: 24px;
+    gap: 12px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.formSubmited {
+  display: none;
+}

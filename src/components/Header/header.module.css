@@ -1,0 +1,212 @@
+.header,
+.headerMobile {
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
+    /* padding: 8px 8px 8px 32px; */
+    gap: 24px;
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--bronze-border);
+    position: fixed;
+    z-index: 9998;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+.headerMobile {
+    padding: 8px 12px;
+    justify-content: space-between;
+}
+
+.mobileHeaderIcons {
+    display: flex;
+    gap: 12px;
+}
+
+.miniLogo,
+.bascetIcon {
+    flex: 0 0 auto;
+}
+
+.miniLogo {
+    filter: drop-shadow(0 0 1px #FFF7E8);
+}
+
+.headerNav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.headerNav ul,
+.mobileNav ul {
+    margin: 0;
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+.accountBtns {
+    display: flex;
+    gap: 12px;
+    flex: 0 0 auto;
+}
+
+.navLink {
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    border: none;
+    color: var(--nav-text);
+    text-decoration: none;
+}
+
+.navLink:hover,
+.navLink.active {
+    background-color: var(--nav-hover);
+    color: var(--nav-hover-text);
+}
+
+.avatarContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--elements-bg);
+    border: 1px solid var(--bronze-border);
+    border-radius: 8px;
+    padding: 12px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.dropdownItem {
+    padding: 4px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    border: none;
+    color: var(--nav-text);
+    text-decoration: none;
+    white-space: nowrap
+}
+
+.dropdownItem:hover {
+    background-color: var(--nav-hover);
+    color: var(--nav-hover-text);
+}
+
+.basketContainer {
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+}
+
+.basketDropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--elements-bg);
+    border: 1px solid var(--bronze-border);
+    border-radius: 8px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.changeThemeBtn {
+    height: 32px;
+    /* width: 32px; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightBtnContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.changeThemeBtnIco {
+    height: 24px;
+    width: 24px;
+}
+
+
+.burgerMenuContainer {
+    position: fixed;
+    background-color: var(--header-bg);
+    width: 100%;
+    height: calc(100% - 53px);
+    left: 0;
+    top: 53px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: -moz-available;
+    height: -webkit-fill-available;
+    height: stretch;
+    height: fill-available;
+}
+
+.mobileNav ul {
+    flex-direction: column;
+    padding: 8px 0;
+    gap: 4px;
+}
+
+.mobileNav ul .navLink {
+    width: 25vw;
+    text-align: center;
+}
+
+.burgerMenuBtn {
+    width: 25vw;
+}
+
+.mediaLinks {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.mediaLinks svg:first-of-type path {
+    stroke: var(--text-default-primary);
+}
+
+.mediaLinks svg:last-of-type path {
+    fill: var(--text-default-primary);
+}
+
+.basketIcon svg g path {
+    stroke: var(--text-default-primary);
+}
+
+.burgerIcon path {
+    stroke: var(--text-default-primary);
+}
+
+@media (max-width: 1024px) {
+    .dropdownMenu {
+        display: none;
+    }
+}

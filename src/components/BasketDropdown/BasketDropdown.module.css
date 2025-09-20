@@ -1,0 +1,130 @@
+.basketDropdown{
+    padding: 0;
+    width: 342px;
+}
+
+.basketHeader {
+    margin: 0;
+    padding: 10px;
+    cursor: default;
+    font: 16px 'Inter', sans-serif;
+    color: var(--text-default-primary);
+    font-weight: bolder;
+}
+
+.basketItem {
+    padding: 5px 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+}
+
+.basketItemInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.basketItem1Line {
+    flex-grow: 1;
+}
+
+.basketItemName {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    line-clamp: 3;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font: 14px 'Inter', sans-serif;
+    color: var(--text-default-primary) !important;
+    cursor: default;
+}
+
+.basketInfo2Line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.basketInfo2Line p{
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    color: var(--text-default-primary);
+}
+
+.trashContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2px;
+    position: relative;
+}
+
+.price {
+    font: 14px 'Inter', sans-serif;
+    font-weight: bolder;
+    color: var(--text-default-primary);
+}
+
+.qty {
+    font: 14px 'Inter', sans-serif;
+    color: var(--text-default-secondary);
+}
+
+.total {
+    padding: 10px;
+    border-top: 1px solid var(--bronze-border);
+    border-bottom: 1px solid var(--bronze-border);
+    display: flex;
+    justify-content: space-between;
+}
+
+.total p {
+    padding: 0;
+    margin: 0;
+    font: 14px 'Inter', sans-serif;
+    font-weight: bolder;
+    cursor: default;
+    color: var(--text-default-primary);
+}
+
+.buttons {
+    padding: 5px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trashContainer svg path {
+    stroke: var(--text-default-primary);
+}
+
+.basketItemOldPrice {
+    color: var(--text-default-secondary);
+    font-weight: normal;
+    text-decoration: line-through;
+    margin-right: 4px;
+    font-size: 13px;
+}
+
+.badgeText {
+    background-color: #FF3B30;
+    padding: 2px 8px;
+    font: 14px 'Inter', sans-serif;
+    border-radius: 10px;
+    color: var(--promo-badge-text);
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 1024px) {
+    .basketDropdown {
+        display: none;
+    }
+}

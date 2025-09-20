@@ -1,0 +1,59 @@
+.main {
+    color: var(--text-default-primary);
+    font: 18px 'Inter', sans-serif;
+    cursor: default;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+}
+
+.main h1,
+.main h2,
+.main a {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.main h1 {
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: -webkit-xxx-large;
+    font-size: xxx-large;
+}
+
+.main a {
+    color: var(--green-border);
+}
+
+.main a:hover {
+    color: var(--green-text-default-secondary);
+}
+
+.br {
+    display: none;
+}
+
+@media (max-width: 1190px) {
+    .main h2 {
+        font-size: 2.1vw;
+    }
+}
+
+@media (max-width: 980px) {
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    .br {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .main h1 {
+        font-size: 6vw;
+    }
+}

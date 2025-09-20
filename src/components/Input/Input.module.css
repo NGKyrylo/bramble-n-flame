@@ -1,0 +1,113 @@
+/* Контейнер поля */
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стиль для label */
+.label {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: var(--text-default-primary);
+    margin-bottom: 4px;
+}
+
+/* Стиль для label у disabled стані */
+.disabledLabel {
+    color: var(--text-default-tertiary);
+}
+
+/* Загальний стиль для input, textarea, select */
+.input,
+.textarea,
+.select,
+.inputSubContainer,
+.inputSubContainer input {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: var(--text-default-primary);
+    background-color: var(--input-bg);
+    padding: 12px 16px;
+    padding: 6px 8px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.inputSubContainer {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.inputSubContainer input {
+    border: none;
+}
+
+.inputSubContainer button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Стиль для placeholder */
+.input::placeholder,
+.textarea::placeholder,
+.select::placeholder,
+.inputSubContainer input::placeholder {
+    color: #B3B3B3;
+}
+
+/* Стиль для полів з помилкою */
+.errorBorder {
+    border-color: var(--input-error);
+}
+
+/* Стиль для полів у disabled стані */
+.disabledField {
+    color: #B2B2B2;
+    background-color: var(--disabled-input-bg);
+    border-color: #B2B2B2;
+    cursor: not-allowed;
+}
+
+/* Стиль для textarea */
+.textarea {
+    resize: both;
+}
+
+/* Заборона зміни розміру */
+.noResize {
+    resize: none;
+}
+
+.verticalResize {
+    resize: vertical;
+}
+
+.horizontalResize {
+    resize: horizontal;
+}
+
+.autoResize {
+    resize: none;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Стиль для select */
+/* .select { */
+    /* appearance: none; */
+/* } */
+
+.inputContainer .checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.eye path {
+    stroke: var(--text-default-primary);
+}

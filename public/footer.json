@@ -1,0 +1,14 @@
+{
+    "firstColumn": [
+        ["About Us", "/about-us"],
+        ["Contact Us", "/contact-us"]
+    ],
+    "secondColumn": [
+    ],
+    "thirdColumn": [
+    ],
+    "fourthColumn": [
+        ["Terms of Service", "/document/Terms-of-Service"],
+        ["Privacy Policy", "/document/Privacy-Policy"]
+    ]
+}

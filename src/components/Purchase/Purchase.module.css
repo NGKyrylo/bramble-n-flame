@@ -1,0 +1,57 @@
+.purchaseContainer {
+    background-color: var(--elements-bg);
+    border: 1px solid var(--bronze-border);
+    border-radius: 8px;
+    padding: 12px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.status,
+.purchaseInfoContainer p,
+.trackingInfo {
+    margin: 0;
+    cursor: default;
+    font: 16px 'Inter', sans-serif;
+    color: var(--text-default-primary);
+    /* font-weight: bolder; */
+}
+
+.purchaseInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+}
+
+.productContainer {
+    display: flex;
+    gap: 12px;
+}
+
+.productContainer h1,
+.productContainer p {
+    margin: 0;
+    cursor: default;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-default-primary);
+}
+
+.productContainer h1 {
+    font-size: 24px;
+}
+
+.productContainer p {
+    color: var(--text-default-secondary);
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btnsContainer {
+    display: flex;
+    gap: 8px
+}

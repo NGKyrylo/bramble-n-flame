@@ -1,0 +1,245 @@
+.main {
+    display: flex;
+    padding: 24px;
+    gap: 32px;
+}
+
+.leftSideCaontainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.hr {
+    width: auto;
+    height: 1px;
+    background-color: var(--bronze-border);
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.boxContainer h1 {
+    margin: 0;
+    color: var(--text-default-primary);
+    font: 24px 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: default;
+}
+
+.basketSummary {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    padding: 10px;
+    background-color: var(--elements-bg);
+    border: 1px solid var(--bronze-border);
+    border-radius: 8px;
+    height: fit-content;
+    gap: 10px;
+}
+
+.summaryTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.summaryText,
+.summaryTextTotal {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    color: var(--text-default-primary);
+    font: 16px 'Inter', sans-serif;
+    cursor: default;
+}
+
+.summaryTextTotal {
+    font-weight: bold;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formLineContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* .itemsCenter {
+    align-items: center;
+} */
+
+.selectCountry {
+    width: 213px;
+}
+
+.issueText {
+    max-width: 213px;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    color: #BF6A02;
+    font: 16px 'Inter', sans-serif;
+    cursor: default;
+}
+
+.successCode,
+.wrongCode {
+    margin: 0;
+    color: var(--text-default-primary);
+    font: 16px 'Inter', sans-serif;
+    cursor: default;
+    display: flex;
+    align-items: center;
+}
+
+.successCode {
+    color: #009951;
+}
+
+.wrongCode {
+    color: #BF6A02;
+}
+
+.basketItemsContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.basketItem {
+    padding: 10px;
+    background-color: var(--elements-bg);
+    border: 1px solid var(--bronze-border);
+    border-radius: 8px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.basketItemInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.basketItemDetails {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-grow: 1;
+
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.basketItemName,
+.basketItemPrice,
+.selectContainer p {
+    margin: 0;
+    color: var(--text-default-primary);
+    font: 16px 'Inter', sans-serif;
+    cursor: default;
+}
+
+.basketItemName {
+    flex: 1;
+    font-size: 14px;
+}
+
+.basketItemPrice {
+    width: 143px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.deliveryAlert {
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    color: #BF6A02;
+    margin: 4px 2px;
+    font: 16px 'Inter', sans-serif;
+}
+
+.summaryContainer {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+.cardInput label {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: var(--text-default-primary);
+    margin-bottom: 4px;
+}
+
+.strypeInputWrapper {
+    background-color: var(--input-bg);
+    padding: 6px 8px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+    width: 213px;
+}
+
+.error {
+    border-color: var(--input-error);
+}
+
+.basketItemOldPrice {
+    color: var(--text-default-secondary);
+    font-weight: normal;
+    text-decoration: line-through;
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+.badgeText {
+    position: absolute;
+    background-color: #FF3B30;
+    padding: 2px 8px;
+    font: 16px 'Inter', sans-serif;
+    border-radius: 10px;
+    right: 0;
+    bottom: 0;
+    color: var(--promo-badge-text);
+}
+
+@media (max-width: 930px) {
+    .main {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .basketSummary,
+    .deliveryAlert {
+        width: -webkit-fill-available;
+    }
+
+    .summaryContainer {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+
+    .basketItemPrice {
+        width: 100px;
+    }
+}
