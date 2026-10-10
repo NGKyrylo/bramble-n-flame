@@ -1,48 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bramble & Flame
 
-## Getting Started
+Customer-facing storefront for [Bramble & Flame](https://bramble-n-flame.co.uk), a small independent UK business. Built as an MVP for a real client and currently live.
 
-First, run the development server:
+> **Note:** This repository contains the public storefront only. The admin panel (React + Vite) and the backend API (Node.js, MySQL) are part of the client's private infrastructure and are not publicly available.
+
+## Features
+
+**Storefront (this repo)**
+- Best sellers section on the home page
+- Product pages
+- Ordering flow with form validation and secure online payment via Stripe
+- Responsive, minimalistic layout
+
+**Admin panel (private)**
+- Product editing
+- Promotions management
+- Order moderation workflow: open orders, orders claimed by an admin for processing and dispatch, and shipped orders (with courier and tracking number)
+
+**Backend (private)**
+- REST API for authentication, products and orders
+- Automated emails: order confirmation ("we received your order") and dispatch notification with tracking details
+
+## Tech stack
+
+| Part | Technologies |
+| --- | --- |
+| Storefront | Next.js, React |
+| Admin panel | React, Vite |
+| Backend | Node.js, REST API, MySQL |
+| Payments | Stripe |
+| Deployment | NGINX (reverse proxy), Ubuntu Linux |
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the project root:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Environment setup (.env.local)
-
-Before running the project, you need to create a **`.env.local`** file in the root directory  
-and add the following environment variables:
-
-```env
+```
 NEXT_PUBLIC_API_URL=YOUR_API_URL_HERE
 NEXT_PUBLIC_STRIPE_PUBLISHABLE=YOUR_STRIPE_PUBLISHABLE_KEY_HERE
-NEXT_PUBLIC_FACEBUK_URL=SOCIAL_MEDIA_LINK_HERE
+NEXT_PUBLIC_FACEBOOK_URL=SOCIAL_MEDIA_LINK_HERE
 NEXT_PUBLIC_INSTAGRAM_URL=SOCIAL_MEDIA_LINK_HERE
 ```
 
-## Deploy on Vercel
+Note: the storefront needs the private backend API to run fully.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Status
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MVP launched and tested. Next development phase (feature expansion) is being planned.
